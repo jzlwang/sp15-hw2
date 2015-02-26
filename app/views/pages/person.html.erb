@@ -1,0 +1,6 @@
+<% if params[:name].blank? or params[:age].blank? %>
+  <h2>Please tell me your name and age!</h2>
+<% else %>
+  <h1><%= @intro %></h1>
+  <h2>I was born in <%= @year %> and you can call me <%= @nick %></h2>
+<% end %>
